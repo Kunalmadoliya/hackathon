@@ -2,7 +2,7 @@
 
 A food ordering marketplace where Flagsmith runs the important decisions. Sellers design their own store pages, customers order, and an admin runs a real A/B test on the checkout button, then ships the winner from inside the app.
 
-Built for the Flagsmith Toggle Wars hackathon, **Track 01: Test Something Real**. Full requirements are in [docs/PRD.md](docs/PRD.md). The demo video script is in [docs/DEMO.md](docs/DEMO.md).
+Built for the Flagsmith Toggle Wars hackathon, **Track 01: Test Something Real**. For a visual tour of what happens behind the scenes, module by module, see **[docs/HOW-IT-WORKS.md](docs/HOW-IT-WORKS.md)**. Full requirements are in [docs/PRD.md](docs/PRD.md). The demo video script is in [docs/DEMO.md](docs/DEMO.md).
 
 > **The experiment traffic is simulated.** 2,000 simulated customers were sent through Flagsmith by [scripts/simulate.ts](scripts/simulate.ts). The conversion rates the script used are listed [below](#simulated-traffic), so you can check that Flagsmith found what was put in.
 

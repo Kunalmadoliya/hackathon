@@ -1,26 +1,154 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+  Platter design tokens: two themes only, white and dark. Monochrome.
+  The bento grid is a tray of compartments of different sizes; hierarchy comes
+  from size and type weight, not colour. Seller colours appear only inside a
+  storefront wrapper, never in the app chrome.
+*/
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --page: #ffffff;
+  --tray: #efefef;      /* the bento tray behind compartments */
+  --cell: #ffffff;      /* a compartment */
+  --line: #d4d4d4;      /* borders, hover fills */
+  --ink: #000000;
+  --ink-soft: #595959;  /* 7:1 on white */
+  --danger: #b42318;    /* errors and warnings only */
+  --cell-shadow: inset 0 0 0 1px #e2e2e2;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #000000;
+  --tray: #1c1c1c;
+  --cell: #0f0f0f;
+  --line: #3a3a3a;
+  --ink: #ffffff;
+  --ink-soft: #a6a6a6;  /* 8:1 on #0f0f0f */
+  --danger: #ff8a7a;
+  --cell-shadow: inset 0 0 0 1px #262626;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-page: var(--page);
+  --color-tray: var(--tray);
+  --color-cell: var(--cell);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-danger: var(--danger);
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-instrument);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--page);
+  color: var(--ink);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-instrument), system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-bricolage), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* Bento grid. Compartments vary by role, not one card style. */
+.thali {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  padding: 0.5rem;
+  border-radius: 1.75rem;
+  background: var(--tray);
+}
+
+.katori {
+  position: relative;
+  min-width: 0;
+  background: var(--cell);
+  color: var(--ink);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: var(--cell-shadow);
+}
+.katori-lg { border-radius: 1.375rem; padding: 1.5rem; }
+.katori-sm { border-radius: 0.875rem; padding: 1rem; }
+/* inverted compartment: used once per screen for the thing that matters most */
+.katori-invert { background: var(--ink); color: var(--page); box-shadow: none; }
+.katori-invert .text-ink-soft { color: color-mix(in srgb, var(--page) 70%, transparent); }
+
+.span-1 { grid-column: span 1; }
+.span-2 { grid-column: span 2; }
+.span-3 { grid-column: span 3; }
+.span-4 { grid-column: span 4; }
+.span-6 { grid-column: span 6; }
+.row-2 { grid-row: span 2; }
+
+@media (max-width: 900px) {
+  .thali { grid-template-columns: repeat(2, minmax(0, 1fr)); border-radius: 1.5rem; }
+  .span-1, .span-2 { grid-column: span 1; }
+  .span-3, .span-4, .span-6 { grid-column: span 2; }
+  .row-2 { grid-row: auto; }
+}
+@media (max-width: 520px) {
+  .thali { grid-template-columns: minmax(0, 1fr); }
+  .span-1, .span-2, .span-3, .span-4, .span-6 { grid-column: span 1; }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  background: var(--ink);
+  color: var(--page);
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+.btn:hover { opacity: 0.85; }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn-quiet { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+.btn-quiet:hover { opacity: 1; background: var(--tray); }
+.katori-invert .btn { background: var(--page); color: var(--ink); }
+
+.chip-on, .chip-off {
+  border-radius: 999px;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.chip-on { background: var(--ink); color: var(--page); }
+.chip-off { box-shadow: inset 0 0 0 1.5px var(--ink-soft); color: var(--ink-soft); }
+
+.field {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  background: var(--cell);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1.5px var(--line);
+}
+.field:focus { box-shadow: inset 0 0 0 2px var(--ink); outline: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
 }

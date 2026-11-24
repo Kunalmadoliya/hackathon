@@ -4,6 +4,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
     agentFeedback: true,
+    // Theme banners are up to 2 MB; leave room for multipart overhead.
+    serverActions: { bodySizeLimit: "2.2mb" },
   },
   cacheComponents: true,
   partialPrefetching: true,

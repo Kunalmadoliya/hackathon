@@ -6,18 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:push": "drizzle-kit push --force",
+    "db:seed": "node --env-file=.env.local scripts/seed.mts",
+    "simulate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env.local scripts/simulate.ts",
+    "db:up": "docker compose up -d",
+    "flagsmith:setup": "node --env-file=.env.local scripts/flagsmith-setup.mjs"
   },
   "dependencies": {
+    "@flagsmith/flagsmith": "^12.6.0",
+    "@flagsmith/nodejs": "^9.5.0",
+    "drizzle-orm": "^0.45.4",
     "next": "16.4.6",
+    "pg": "^8.23.1",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "4.3.3",
     "@types/node": "^20",
+    "@types/pg": "^8.23.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.11",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "tailwindcss": "4.3.3",

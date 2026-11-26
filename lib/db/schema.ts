@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * The database tables: users, sellers, themes, items, store_discounts, title_tests, title_events,
+ * user_prefs, orders, order_items, cart_items, events. `npm run db:push` creates them.
+ */
 import {
   pgTable,
   serial,

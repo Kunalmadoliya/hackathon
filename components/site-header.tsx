@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Top bar on every page: logo, menu links for your role, who you are, Switch account, White/Dark.
+ * Uses: lib/session, app/login/actions (signOut), ./theme-toggle. Used by: app/layout.tsx.
+ */
 import Link from "next/link";
 import { getCurrentUser, type Role } from "@/lib/session";
 import { signOut } from "@/app/login/actions";

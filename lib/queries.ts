@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Small shared queries and helpers: kitchen cards, last order, India week/month start, rupees().
+ * Used by: many pages.
+ */
 import "server-only";
 import { sql } from "drizzle-orm";
 import { db } from "./db";

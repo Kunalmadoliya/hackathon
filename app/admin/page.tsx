@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Admin home (/admin): this week's orders, the switches at a glance, link to the experiment.
+ * Uses: lib/flags, lib/db.
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { sql } from "drizzle-orm";

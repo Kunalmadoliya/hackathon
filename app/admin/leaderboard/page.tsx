@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Admin leaderboards (/admin/leaderboard): real names, 'Name shown/hidden' chips, and the seller table.
+ * Uses: lib/leaderboard, components/boards, lib/db.
+ */
 import { Suspense } from "react";
 import { sql } from "drizzle-orm";
 import { db } from "@/lib/db";

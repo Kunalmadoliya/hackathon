@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Success metrics (/admin/metrics): the experiment (Randomised) plus theme, leaderboard and
+ * title-test numbers (labelled Descriptive).
+ * Uses: lib/metrics (Postgres numbers), lib/flagsmith-admin (experiment numbers).
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { requireUser } from "@/lib/session";

@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Server actions for login: signInAs saves your user id in a cookie; signOut clears it.
+ * Used by: app/login/page.tsx and the 'Switch account' button in components/site-header.tsx.
+ */
 "use server";
 
 import { cookies } from "next/headers";

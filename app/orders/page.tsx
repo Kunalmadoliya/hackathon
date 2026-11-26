@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Order history (/orders) and the 'Order placed' confirmation after checkout.
+ * Uses: lib/db, lib/session, lib/queries.
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { sql } from "drizzle-orm";

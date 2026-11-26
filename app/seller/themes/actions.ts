@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Server actions for looks: saveTheme (checks theme_options from Flagsmith, checks the image,
+ * strips HTML), activateTheme, resetToDefault, deleteTheme. Each one checks you own the look.
+ * Uses: lib/flags, lib/theme, lib/db. Writes images to uploads/.
+ */
 "use server";
 
 import { randomUUID } from "node:crypto";

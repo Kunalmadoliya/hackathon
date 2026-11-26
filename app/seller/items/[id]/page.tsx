@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Add or edit one dish (/seller/items/new or /seller/items/<id>).
+ * Uses: lib/store-data, ../forms (ItemForm).
+ */
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { requireSeller } from "@/lib/session";

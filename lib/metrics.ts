@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * SQL for the admin metrics page: theme adoption, opt-outs, theme impact, board views,
+ * name visibility, growth, title tests, top-3 share. Used by: app/admin/metrics.
+ */
 import "server-only";
 import { sql } from "drizzle-orm";
 import { db } from "./db";

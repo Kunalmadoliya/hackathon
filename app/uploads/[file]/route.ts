@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Serves seller banner images from the uploads/ folder (/uploads/<id>.png).
+ * Only serves names the app generated, so nobody can read other files.
+ */
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 

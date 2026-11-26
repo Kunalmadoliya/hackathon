@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Edit look page (/seller/themes/<id>): opens the editor for one of YOUR looks only.
+ * Uses: ../editor, lib/flags, lib/store-data.
+ */
 import { Suspense } from "react";
 import { notFound, redirect } from "next/navigation";
 import { requireSeller } from "@/lib/session";

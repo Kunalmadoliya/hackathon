@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Server actions that change Flagsmith: toggleFlag, refreshExperiment, shipWinner.
+ * Admin only. They call lib/flagsmith-admin.ts, which holds the secret admin key.
+ */
 "use server";
 
 import { revalidatePath } from "next/cache";

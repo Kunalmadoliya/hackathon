@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Look helpers (server and browser): contrast ratio, colour variables for a store, text cleaning,
+ * and checking a look against theme_options. Used by: studio, storefront, seller actions.
+ */
 // Theme helpers shared by server and client code (no server-only imports here).
 import type { ThemeTokens } from "./db/schema";
 import type { ThemeOptions } from "./flags-types";

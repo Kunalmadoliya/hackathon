@@ -1,3 +1,10 @@
+/**
+ * FILE GUIDE
+ * Cart page (/cart). THE EXPERIMENT LIVES HERE: asks Flagsmith which checkout version you get
+ * and shows [Checkout] (control, two steps) or [Order now] (express, one step).
+ * Also greys the button out when the ordering_enabled kill switch is off.
+ * Uses: lib/flags (getCheckoutAssignment), lib/cart (prices), ./actions, ./checkout-controls.
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { requireUser } from "@/lib/session";

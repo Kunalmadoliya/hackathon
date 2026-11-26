@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Draws a store: banner, offer badge, sections and dishes, in the seller's colours (CSS variables)
+ * or in the black-and-white Platter look. Used by: the store page AND the theme editor preview.
+ * Uses: lib/theme (colour variables), lib/store-fonts.
+ */
 import type { ThemeTokens } from "@/lib/db/schema";
 import { themeStyle } from "@/lib/theme";
 import { STORE_FONT_CLASSES, fontVar } from "@/lib/store-fonts";

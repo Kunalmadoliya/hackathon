@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * New look page (/seller/themes/new?from=<id>): opens the editor with a copy of an existing look.
+ * Uses: ../editor, lib/flags (theme_options limits), lib/store-data.
+ */
 import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { requireSeller } from "@/lib/session";

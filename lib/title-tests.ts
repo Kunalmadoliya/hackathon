@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Seller title tests: which title a customer sees (stable hash of user + test), logging
+ * view / add_to_cart / order, and per-title results. Used by: store, cart, seller test page.
+ */
 import "server-only";
 import { createHash } from "node:crypto";
 import { and, eq, inArray, sql } from "drizzle-orm";

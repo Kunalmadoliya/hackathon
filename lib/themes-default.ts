@@ -1,3 +1,7 @@
+/**
+ * FILE GUIDE
+ * The 3 Platter looks (Classic, Night, Fresh). Used by: the seed script and the theme resolver.
+ */
 import type { ThemeTokens } from "./db/schema.ts";
 
 // Platform default themes (PRD section 7). Shared by the seed script and the app.

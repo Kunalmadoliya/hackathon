@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Title test page (/seller/items/<id>/ab-test): start a test with titles A and B, watch results,
+ * declare a winner. Hidden when the seller_ab_titles_enabled flag is off.
+ * Uses: lib/title-tests (results), ../../forms.
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";

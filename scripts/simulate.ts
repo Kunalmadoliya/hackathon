@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * SIMULATED TRAFFIC for the experiment: fake customers get a version from Flagsmith and order
+ * at the rates set at the top. Run: npm run simulate (or -- --dry-run to send nothing).
+ */
 // Simulated traffic for the checkout_button experiment.
 //
 // THIS TRAFFIC IS SIMULATED. Each simulated customer is a new Flagsmith identity.

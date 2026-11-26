@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Customer home page (/): the kitchens in a bento grid, plus 'Your last order'.
+ * Shows a 'paused' banner if the ordering_enabled flag is off.
+ * Uses: lib/session (who you are), lib/flags (Flagsmith), lib/queries (kitchens, last order).
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { requireUser } from "@/lib/session";

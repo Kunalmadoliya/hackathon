@@ -1,3 +1,7 @@
+/**
+ * FILE GUIDE
+ * Next.js settings: Cache Components on, and a 2.2 MB upload limit for banner images.
+ */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {

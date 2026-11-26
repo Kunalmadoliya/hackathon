@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Builds a cart from the database and works out prices (dish discount, then store discount).
+ * Prices never come from the browser. Used by: cart page, checkout page, placeOrder.
+ */
 import "server-only";
 import { and, desc, eq } from "drizzle-orm";
 import { db, schema } from "./db";

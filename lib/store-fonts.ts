@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Loads the 4 fonts sellers may pick (Inter, Poppins, Merriweather, Space Grotesk).
+ * Used by: components/storefront.tsx.
+ */
 import { Inter, Poppins, Merriweather, Space_Grotesk } from "next/font/google";
 
 // Fonts sellers may pick. The allowed list itself comes from Flagsmith (theme_options);

@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Seller home (/seller): this week's orders and sales, which look is live, links to studio and menu.
+ * Uses: lib/db, lib/session (requireSeller), lib/flags.
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { sql } from "drizzle-orm";

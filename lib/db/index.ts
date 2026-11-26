@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Opens the Postgres connection (Drizzle ORM). Everything that reads or writes data imports `db` from here.
+ * Connection string comes from DATABASE_URL in .env.local.
+ */
 import "server-only";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";

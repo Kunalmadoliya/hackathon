@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Creates everything in Flagsmith: the 6 flags, the order_placed metric and the experiment.
+ * Run: npm run flagsmith:setup   (add --start to start the experiment).
+ */
 // Creates Platter's flags, the order_placed metric and the checkout_button experiment
 // through the Flagsmith Admin API. Safe to re-run: existing items are reused.
 // It does NOT start the experiment (starting locks the flag). Run with --start to start it.

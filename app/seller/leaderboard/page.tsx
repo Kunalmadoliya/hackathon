@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Seller's 'Show my store name on leaderboards' switch (/seller/leaderboard) and this week's rank.
+ * Uses: lib/leaderboard, ../items/actions (setLeaderboardName).
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { eq } from "drizzle-orm";

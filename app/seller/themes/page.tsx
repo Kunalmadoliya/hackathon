@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Theme studio list (/seller/themes): your looks and the 3 Platter looks. Make live, copy, delete.
+ * Locked when the seller_themes_enabled flag is off.
+ * Uses: lib/store-data, lib/theme (contrast check), ./actions.
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { requireSeller } from "@/lib/session";

@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Who is signed in: reads the login cookie, and requireUser / requireSeller guards.
+ * Every page and server action calls these first. Uses: lib/db.
+ */
 import "server-only";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";

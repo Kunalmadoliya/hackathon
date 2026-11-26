@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * THE FLAGSMITH CONNECTION (Node SDK, server only). Reads flags for a user, works out the checkout
+ * version, records exposures, sends events (add_to_cart, checkout_started, order_placed), flushes them.
+ * If Flagsmith is down it returns safe defaults. Used by: almost every page and action.
+ */
 import "server-only";
 import { Flagsmith, DefaultFlag, type Flag, type Flags } from "@flagsmith/nodejs";
 

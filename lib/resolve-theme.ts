@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Decides which look a store shows, first match wins: flag off, customer opted out, seller's look, default.
+ * Used by: the store page and recordStoreView.
+ */
 import "server-only";
 import { and, eq, isNull, or } from "drizzle-orm";
 import { db, schema } from "./db";

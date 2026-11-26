@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Invisible browser helper: once the store page is really on screen, it calls recordStoreView.
+ * Why: link prefetches must not count as visits.
+ */
 "use client";
 
 import { useEffect, useRef } from "react";

@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Fills the database with demo data (wipes it first): 1 admin, 3 sellers, 5 customers,
+ * 20 dishes, 3 weeks of orders. Run: npm run db:seed.
+ */
 // Seeds demo data: 1 admin, 3 sellers, 5 users, ~20 items, 3 weeks of past orders.
 // Run: npm run db:seed   (wipes and refills every table)
 import { drizzle } from "drizzle-orm/node-postgres";

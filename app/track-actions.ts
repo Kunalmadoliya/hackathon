@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Server action recordPageView: saves page-view events (leaderboard_view) for the metrics page.
+ * Used by: components/page-view.tsx.
+ */
 "use server";
 
 import { db, schema } from "@/lib/db";

@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Leaderboard lists (kitchens and customers) and the This week / This month tabs.
+ * Used by: app/leaderboard and app/admin/leaderboard. Uses: lib/leaderboard (anonymous names).
+ */
 import Link from "next/link";
 import { sellerDisplayName, type BoardWindow, type SellerRow, type UserRow } from "@/lib/leaderboard";
 import { rupees } from "@/lib/queries";

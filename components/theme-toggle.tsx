@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * The White | Dark switch (browser). Saves your choice in localStorage and sets data-theme on <html>.
+ * Used by: components/site-header.tsx. Colours live in app/globals.css.
+ */
 "use client";
 
 import { useSyncExternalStore } from "react";

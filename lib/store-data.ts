@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Loads one store: seller row, menu, active discount, own looks and Platter looks.
+ * Used by: store page, theme studio, menu pages.
+ */
 import "server-only";
 import { and, asc, desc, eq, isNull } from "drizzle-orm";
 import { db, schema } from "./db";

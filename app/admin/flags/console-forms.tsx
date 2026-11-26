@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Browser parts of the console: FlagSwitch, RefreshResults, ShipWinner.
+ * Calls: ./actions.
+ */
 "use client";
 
 import { useActionState } from "react";

@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * The frame around every page: loads the fonts, the global styles and the header.
+ * Also runs a tiny script before the page paints so your White/Dark choice shows instantly.
+ * Uses: components/site-header.tsx. Used by: every page in app/.
+ */
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { Bricolage_Grotesque, Instrument_Sans } from "next/font/google";

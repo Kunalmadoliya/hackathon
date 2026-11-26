@@ -1,3 +1,10 @@
+/**
+ * FILE GUIDE
+ * Server actions for buying: addToCart, setQuantity, cartShown (records the EXPOSURE),
+ * checkoutStarted / goToReview (checkout_started) and placeOrder (saves the order, sends order_placed).
+ * placeOrder re-checks the kill switch and re-prices everything from the database.
+ * Uses: lib/flags (Flagsmith events), lib/cart, lib/title-tests, lib/db.
+ */
 "use server";
 
 import { after } from "next/server";

@@ -1,3 +1,7 @@
+/**
+ * FILE GUIDE
+ * Tells drizzle-kit where the tables are defined (lib/db/schema.ts) and which database to update.
+ */
 import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({

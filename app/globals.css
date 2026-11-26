@@ -1,3 +1,9 @@
+/*
+ * FILE GUIDE
+ * All shared styles: the White and Dark colour sets, the bento grid (.thali / .katori),
+ * buttons (.btn), switches (.chip-on/.chip-off) and form fields (.field).
+ * Used by: app/layout.tsx, so it applies everywhere.
+ */
 @import "tailwindcss";
 
 /*

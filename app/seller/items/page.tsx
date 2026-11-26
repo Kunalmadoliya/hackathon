@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Menu page (/seller/items): your dishes, which ones have a title test running, and the store discount.
+ * Uses: lib/store-data, lib/flags, ./forms.
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { sql } from "drizzle-orm";

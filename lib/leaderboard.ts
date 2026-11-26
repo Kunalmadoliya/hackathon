@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Leaderboard SQL: ranks sellers and customers for this week or month (India time),
+ * and shows hidden sellers as 'Anonymous seller #N'. Used by: both leaderboard pages.
+ */
 import "server-only";
 import { sql } from "drizzle-orm";
 import { db } from "./db";

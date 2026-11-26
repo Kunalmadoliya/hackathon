@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Invisible browser helper: logs one page view after the page is really shown.
+ * Calls: app/track-actions.ts. Used by: app/leaderboard/page.tsx.
+ */
 "use client";
 
 import { useEffect, useRef } from "react";

@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Login page (/login): pick a demo account. No passwords, it's a demo.
+ * Uses: lib/db (list of accounts), ./actions (signInAs).
+ */
 import { Suspense } from "react";
 import { connection } from "next/server";
 import { asc, eq } from "drizzle-orm";

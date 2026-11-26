@@ -11,7 +11,8 @@
     "db:seed": "node --env-file=.env.local scripts/seed.mts",
     "simulate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file=.env.local scripts/simulate.ts",
     "db:up": "docker compose up -d",
-    "flagsmith:setup": "node --env-file=.env.local scripts/flagsmith-setup.mjs"
+    "flagsmith:setup": "node --env-file=.env.local scripts/flagsmith-setup.mjs",
+    "docs:index": "node scripts/file-index.mjs"
   },
   "dependencies": {
     "@flagsmith/flagsmith": "^12.6.0",

@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * A store's menu page (/store/1). Draws the store in the seller's look or the Platter look,
+ * shows the two look switches, dish titles (title tests) and the Add buttons.
+ * Uses: lib/resolve-theme (which look), lib/store-data (menu), lib/title-tests, components/storefront.
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";

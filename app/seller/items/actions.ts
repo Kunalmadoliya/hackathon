@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Server actions for the seller: saveItem, saveStoreDiscount, startTitleTest, declareWinner,
+ * setLeaderboardName. Each one checks the dish or test belongs to your store.
+ * Uses: lib/db, lib/flags, lib/theme (cleanText).
+ */
 "use server";
 
 import { redirect } from "next/navigation";

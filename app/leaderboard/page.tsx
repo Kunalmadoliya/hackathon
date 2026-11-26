@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Public leaderboard (/leaderboard): top kitchens and customers, this week or this month.
+ * Hidden when the leaderboard_enabled flag is off. Hidden-name sellers show as 'Anonymous seller #N'.
+ * Uses: lib/leaderboard, components/boards, components/page-view (logs leaderboard_view).
+ */
 import { Suspense } from "react";
 import { requireUser } from "@/lib/session";
 import { getFlags } from "@/lib/flags";

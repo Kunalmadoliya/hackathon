@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * The theme editor (runs in the browser): colour pickers, font, corners, buttons, banner, badge,
+ * a live preview of your real menu, and the 'hard to read' contrast warning.
+ * Uses: components/storefront (preview), lib/theme (contrast), ./actions (saveTheme).
+ */
 "use client";
 
 import { useActionState, useState } from "react";

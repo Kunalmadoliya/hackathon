@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Browser parts of checkout: ExposureBeacon (tells the server 'the cart is on screen'),
+ * PlaceOrderButton, and ExpressCheckout (the one-step confirm sheet).
+ * Used by: app/cart/page.tsx and app/checkout/page.tsx.
+ */
 "use client";
 
 import { useActionState, useEffect, useRef } from "react";

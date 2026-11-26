@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Server actions for the store page: switch this store's look on/off, 'always Platter look',
+ * and recordStoreView (logs store_view / theme_applied / title-test views in Postgres).
+ * Used by: the store page and ./view-beacon.tsx.
+ */
 "use server";
 
 import { revalidatePath } from "next/cache";

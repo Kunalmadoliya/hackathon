@@ -1,3 +1,5 @@
+# FILE GUIDE
+# Starts the Postgres database in Docker on port 5433. Run: npm run db:up.
 services:
   db:
     image: postgres:16-alpine

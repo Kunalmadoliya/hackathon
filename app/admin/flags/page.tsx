@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Feature console (/admin/flags): the kill switch, the other flag switches, and the EXPERIMENT PANEL
+ * (order rate per version, lift, credible interval, chance to be best, Ship to everyone).
+ * Uses: lib/flags (current values), lib/flagsmith-admin (results), ./console-forms.
+ */
 import { Suspense } from "react";
 import { sql } from "drizzle-orm";
 import { db } from "@/lib/db";

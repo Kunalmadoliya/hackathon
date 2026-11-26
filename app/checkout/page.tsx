@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Review page (/checkout): step two of the CONTROL version only. Express users are sent back to /cart.
+ * Uses: lib/flags, lib/cart, ../cart/checkout-controls (PlaceOrderButton).
+ */
 import { Suspense } from "react";
 import Link from "next/link";
 import { redirect } from "next/navigation";

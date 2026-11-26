@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * Browser forms for the seller: dish form, store discount form, start-test form, declare-winner form.
+ * Calls: ./actions.
+ */
 "use client";
 
 import { useActionState } from "react";

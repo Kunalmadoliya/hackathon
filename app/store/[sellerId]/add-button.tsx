@@ -1,3 +1,8 @@
+/**
+ * FILE GUIDE
+ * The 'Add' button on each dish, drawn in the store's own button style. Runs in the browser.
+ * Calls: addToCart in app/cart/actions.ts (which also sends add_to_cart to Flagsmith).
+ */
 "use client";
 
 import { useActionState } from "react";

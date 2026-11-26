@@ -1,3 +1,9 @@
+/**
+ * FILE GUIDE
+ * Flagsmith ADMIN API (server only, uses the secret admin key): flip a flag, read experiment
+ * results, refresh them, and ship the winner (complete the experiment).
+ * Used by: app/admin/flags and app/admin/metrics.
+ */
 import "server-only";
 
 /**
